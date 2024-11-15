@@ -20,30 +20,48 @@ class Cat:
         self.age = age
 
     def walk(self):
-        return f'{self.name} is just walking around'
+        return f"{self.name} is just walking around"
 
 
 class Simon(Cat):
     def sing(self, sounds):
-        return f'{sounds}'
+        return f"{sounds}"
 
 
 class Sally(Cat):
     def sing(self, sounds):
-        return f'{sounds}'
+        return f"{sounds}"
 
 
 # 1 Add another Cat
-class Chilli(Cat):
-    def sing(self, sounds):
-        return f'{sounds}'
+class MyCat(Cat):
+    def eat(self, food):
+        return f"{self.name} is eating {food}"
 
 
-# 2 Create a list of all the pets (create 3 cat instances from the above).
-my_cats = [Simon(Simon, 5), Sally(Sally, 7), Chilli(Chilli, 3)]
+# 2 Create a list of all of the pets (create 3 cat instances from the above)
+my_cats = [Simon("MyCat1", 5), Sally("MyCat2", 7), MyCat("MyCat3", 1)]
 
-# 3 Instantiate the Pet class with all your cats use variable my_pets.
+# 3 Instantiate the Pet class with all your cats use variable my_pets
 my_pets = Pets(my_cats)
 
-# 4 Output all the cats walking using the my_pets instance.
+# 4 Output all of the cats walking using the my_pets instance
 my_pets.walk()
+
+# region
+# # Answers:
+# # 1 Add another Cat
+# class Chilli(Cat):
+#     def sing(self, sounds):
+#         return f'{sounds}'
+
+
+# # 2 Create a list of all the pets (create 3 cat instances from the above).
+# my_cats = [Simon(Simon, 5), Sally(Sally, 7), Chilli(Chilli, 3)]
+
+# # 3 Instantiate the Pet class with all your cats use variable my_pets.
+# my_pets = Pets(my_cats)
+
+# # 4 Output all the cats walking using the my_pets instance.
+# my_pets.walk()
+# endregion
